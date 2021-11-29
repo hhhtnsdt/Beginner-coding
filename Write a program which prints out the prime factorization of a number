@@ -1,0 +1,26 @@
+#include <stdio.h> 
+int main()
+{
+int n;
+int i=2;
+printf("Input number: ");
+scanf("%d", &n);
+if (n>=2){
+    while (n>=2)
+    {
+        if (n%i==0)
+        {
+            printf("%d ",i);
+            n=n/i;
+            }
+    else
+    {
+        i=i+1;
+        }
+    }
+}
+else{
+    printf("error");
+}
+return 0;
+}
